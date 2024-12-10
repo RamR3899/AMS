@@ -1,0 +1,83 @@
+/* MyAssets.css */
+
+/* Flexbox container for search bar and button */
+.search-container {
+  display: flex;
+  justify-content: space-between; /* Ensures the search bar is on the left and button on the right */
+  align-items: center; /* Vertically align items */
+  margin-bottom: 20px; /* Space below the search container */
+}
+
+.custom-search-input {
+  width: 100%;
+  max-width: 350px; /* Set maximum width for search bar */
+  padding: 10px;
+  border: 1px solid #b2b1b1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Card and table styles remain unchanged */
+.my-asset-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+  width: calc(100% - 40px);
+  box-sizing: border-box;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.p-datatable-gridlines {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.p-datatable-gridlines .p-datatable-thead > tr > th, 
+.p-datatable-gridlines .p-datatable-tbody > tr > td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.p-datatable-gridlines .p-datatable-thead > tr > th {
+  background: #f5f5f5;
+}
+
+.product-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.total-unit-price {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.download-button {
+  font-size: 1.1em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: whitesmoke;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-left: 600px; /* Ensure space between search input and button */
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}

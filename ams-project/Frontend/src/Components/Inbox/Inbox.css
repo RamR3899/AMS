@@ -1,0 +1,130 @@
+
+.search-container {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+
+/* Unified Search Bar Styling */
+.search-input {
+  width: 100%;
+  max-width: 350px;
+  padding: 10px;
+  border: 1px solid #b2b1b1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px; /* Consistent font size */
+}
+
+.card {
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.inbox-table{
+  width: 96.5%; /* Increased width for larger table */
+  border-collapse: collapse;
+  margin: 0 auto; /* Center the table horizontally */
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #b2b1b1;
+}
+
+.inbox-table th,
+.inbox-table td {
+    border: 1px solid #ccc;
+    padding: 16px; /* Consistent padding for larger cells */
+    text-align: left;
+    font-size: 16px; /* Consistent font size */
+}
+
+.inbox-table th{
+  background: #f5f5f5;
+}
+
+.inbox-table td img {
+    border-radius: 5px;
+    max-width: 60px; /* Adjusted image size */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.availability-select {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px; /* Consistent font size */
+}
+
+/* Status Button Styles */
+.status-button {
+    padding: 5px 10px;
+    margin: 2px;
+    border: none;
+    font-size: 16px; /* Consistent font size */
+    border-radius: 55px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    color: white;
+}
+
+.status-button.approved {
+  background-color: #3498db;
+}
+
+.status-button.denied {
+  background-color: #3498db;
+}
+
+.status-button.approved:hover {
+  transform: scale(1.09);
+  background-color: #72ed56;
+}
+
+.status-button.denied:hover {
+  transform: scale(1.09);
+  background-color: #eb4e4e;
+}
+
+/* Reason Input Container */
+.reason-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.reason-input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border: 1px solid #b2b1b1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px; /* Consistent font size */
+}
+
+/* Add Button Styles */
+.add-b1 {
+    padding: 10px 20px;
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px; /* Consistent font size */
+}
+
+.add-b1:hover {
+    background-color: #8010bc;
+    transform: scale(1.05);
+}

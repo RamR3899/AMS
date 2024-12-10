@@ -1,0 +1,124 @@
+/* Card styling */
+.card {
+  background: #ffffff; /* background-color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Search bar styling */
+.search-bar .pi {
+  font-size: 1.3em; /* Increase icon size */
+  margin-right: 5px; /* Adjust margin for better alignment */
+}
+
+.search-bar .p-inputtext {
+  font-size: 1.1em;
+  width: 100%;
+  max-width: 350px;
+}
+
+.search-input {
+  font-size: 1.1em;
+  width: 100%;
+  max-width: 350px;
+  height: 40px; /* Increase the height */
+  padding: 0 10px; /* Adjust padding for better alignment */
+  box-sizing: border-box; /* Ensure padding is included in height calculation */
+}
+
+
+/* Filter icon styling */
+.filter-icon {
+  font-size: 1.3em; /* Adjust icon size */
+  margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.filter-icon:hover {
+  color: #8bc34a; /* secondary-color */
+}
+
+/* Filter options styling */
+.filter-options {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #b2b1b1; /* border-color */
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: flex; /* Flex display to align filter options side by side */
+  gap: 10px; /* Space between filter options */
+}
+
+.filter-options label {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Table styling */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  background-color: #ffffff; /* background-color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #b2b1b1; /* border-color */
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+}
+
+td img {
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Request button styles */
+.request-button {
+  background-color: #70bdf0; /* primary-color */
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 0.9rem;
+}
+
+.request-button.requested {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.request-button:hover:not(.requested) {
+  background-color: #8bc34a; /* secondary-color */
+  transform: scale(1.05);
+}
+
+/* Remarks textarea */
+.remarks-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b2b1b1; /* border-color */
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  resize: vertical;
+}

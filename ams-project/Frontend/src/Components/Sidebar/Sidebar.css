@@ -1,0 +1,58 @@
+.sidebar.visible {
+  width: 200px; /* Expanded width */
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.3s ease; /* Smooth transitions */
+  color: #202124; /* Default text color */
+  border-radius: 24px; /* Rounded corners for button shape */
+  margin-bottom: 10px; /* Space between items */
+}
+
+.sidebar-item:hover {
+  background-color: #e8f0fe; /* Gmail-inspired hover color */
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+.sidebar-item.active {
+  background-color: #d2e3fc; /* Blue color similar to Gmail's active state */
+  color: #202124; /* Black text color */
+  font-weight: bold; /* Make text bold for active item */
+  border: none; /* Remove the border */
+  box-shadow: none; /* Remove the shadow */
+}
+
+.sidebar-item.active .sidebar-item-icon {
+  color: #202124; /* Icon color for active item */
+}
+
+.sidebar-item:hover .sidebar-item-icon {
+  color: #1a73e8; /* Change icon color on hover */
+}
+.sidebar {
+  width: 55px; /* Default width when hidden */
+  transition: width 0.3s;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.sidebar-item-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px; /* Add some margin if name is displayed */
+}
+
+.sidebar-item-name {
+  display: inline-block; /* Keep it inline next to the icon */
+}

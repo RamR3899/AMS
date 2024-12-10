@@ -1,0 +1,35 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease, width 0.3s ease;
+  margin-left: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar-visible {
+  margin-left: 10px;
+  width: calc(100% - 200px);
+}
+
+.sidebar-hidden {
+  width: 100%;
+  margin-left: 0;
+}

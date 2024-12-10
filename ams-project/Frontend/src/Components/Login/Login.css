@@ -1,0 +1,93 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://cdn-images-1.medium.com/max/854/0*0Ptgxb4g2liKxjTC.gif');
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.login-box {
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for better visibility on the background image */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  backdrop-filter: blur(10px); /* Optional: Adds a blur effect to enhance text readability */
+}
+
+.login-box h1 {
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.login-button, .google-login-button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.login-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.google-login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.google-login-button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+  margin-top: 1rem;
+  display: block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.form-text {
+  font-size: 0.875rem;
+  color: #6c757d;
+}

@@ -1,0 +1,246 @@
+.assets-page {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+/* Card styling for assets page */
+.my-asset-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px 0;
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* DataTable styling */
+.p-datatable-gridlines {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.p-datatable-gridlines .p-datatable-thead > tr > th,
+.p-datatable-gridlines .p-datatable-tbody > tr > td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.p-datatable-gridlines .p-datatable-thead > tr > th {
+  background: #f5f5f5;
+}
+
+/* Product image styling */
+.product-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* Table header styling */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+/* Add button styling */
+.add-button {
+  background: #4c87af;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-button .icon {
+  margin-right: 5px;
+}
+
+.add-button .icon i {
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.add-button:hover {
+  background-color: #3a6b8d;
+  transform: scale(1.05);
+}
+
+/* Total unit price styling */
+.total-unit-price {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* New asset dialog styling */
+.new-asset-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* .new-asset-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 700px;
+  max-height: 80%;
+  overflow-y: auto;
+  text-align: center;
+} */
+
+.new-asset-form {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 500px;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; /* Enables vertical scrolling */
+  max-height: 80vh; /* Limits the height to 80% of the viewport height */
+}
+
+.new-asset-form h3 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  text-align: center; /* Center the heading */
+}
+
+/* .new-asset-form h3 {
+  margin-bottom: 20px;
+} */
+
+.new-asset-form .p-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.new-asset-form label {
+  font-weight: bold;
+  width: 45%;
+  margin-right: 10px;
+}
+
+
+/* .new-asset-form label {
+  width: 45%;
+  text-align: right;
+  margin-right: 10px;
+} */
+
+/* .new-asset-form input,
+.new-asset-form .p-inputtext,
+.new-asset-form select {
+  width: 45%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} */
+
+/* Standardized input styling */
+.standard-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Apply the standardized input size to text, date, and select elements */
+.new-asset-form input[type="text"],
+.new-asset-form input[type="date"] {
+  width: 100%; /* Ensures consistent width for all inputs */
+  padding: 10px; /* Consistent padding */
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 4px; /* Consistent border radius */
+  border: 1px solid #ccc; /* Consistent border */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* Image preview styling */
+.image-preview {
+  max-width: 120px;
+  max-height: 120px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Dialog buttons styling */
+.dialog-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.save-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+/* Danger button styling */
+.p-button-rounded.p-button-danger {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.p-button-rounded.p-button-danger:hover {
+  background-color: #d32f2f;
+}
+
+.p-button-rounded.p-button-danger:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(244, 67, 54, 0.5);
+}

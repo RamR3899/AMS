@@ -1,0 +1,39 @@
+/* Dashboard.css */
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.chart-card {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for card effect */
+    padding: 20px;
+    margin: 10px; /* Space around the card */
+    width: calc(100% - 20px); /* Full width minus margin */
+    max-width: 400px; /* Maximum width for large screens */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart-card h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .chart-card {
+        width: 45%; /* Two cards per row on medium screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .chart-card {
+        width: 30%; /* Three cards per row on large screens */
+    }
+}
